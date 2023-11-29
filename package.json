@@ -1,0 +1,26 @@
+{
+    "name": "uniswap-v2",
+    "description": "uniswap-v2 x Foundry",
+    "author": "Uniswap Labs",
+    "version": "0.0.1",
+    "files": [
+        "src/**/*.sol"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aw-labs/akaishi-core.git"
+    },
+    "devDependencies": {
+        "hardhat": "^2.7.0",
+        "husky": "^7.0.0",
+        "prettier": "^2.3.1",
+        "prettier-plugin-solidity": "^1.0.0-beta.13"
+    },
+    "scripts": {
+        "setup": "make clean && make build",
+        "sync": "make update",
+        "test": "make test",
+        "snapshot": "make snapshot",
+        "lint": "make lint"
+    }
+}
