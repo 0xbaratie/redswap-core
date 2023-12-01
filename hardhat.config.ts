@@ -66,8 +66,8 @@ const config: HardhatUserConfig = {
                 network: "redstonetest",
                 chainId: 17001,
                 urls: {
-                    apiURL: "https://17001-explorer-api.quarry.linfra.xyz/api",
-                    browserURL: "https://17001-explorer-api.quarry.linfra.xyz",
+                    apiURL: process.env.BLOCKSCOUT_URL! + "/api",
+                    browserURL: process.env.BLOCKSCOUT_URL!,
                 },
             },
         ],

@@ -1,0 +1,4 @@
+layout node
+
+export PRIVATE_KEY=0x
+export BLOCKSCOUT_URL="https://"
