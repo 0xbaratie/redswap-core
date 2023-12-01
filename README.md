@@ -45,5 +45,5 @@ forge create --rpc-url https://rpc.holesky.redstone.xyz --private-key [YOUR PRIV
 ### Verify
 
 ```
-forge create --rpc-url https://rpc.holesky.redstone.xyz --private-key [YOUR PRIVATE KEY] src/UniswapV2Factory.sol:UniswapV2Factory --verify --verifier blockscout --verifier-url https://explorer.holesky.redstone.xyz/api
+forge create --rpc-url https://rpc.holesky.redstone.xyz --private-key [YOUR PRIVATE KEY] src/UniswapV2Factory.sol:UniswapV2Factory --verify --verifier blockscout --verifier-url https://17001-explorer-api.quarry.linfra.xyz/api 
 ```
