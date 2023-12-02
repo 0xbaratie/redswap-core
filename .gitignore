@@ -5,6 +5,7 @@ node_modules/
 # Ignore Environment Variables!
 .env
 .env.prod
+.envrc
 
 # Ignore all vscode settings
 .vscode/
@@ -14,3 +15,20 @@ flattened.txt
 
 # Ignore Mac files
 .DS_Store
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+/cache2
+/artifacts2
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
