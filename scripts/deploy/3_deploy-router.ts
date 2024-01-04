@@ -4,8 +4,8 @@ import { getAddresses } from "../addresses"
 const main = async () => {
     const a = getAddresses()!
 
-    const pancakeFactory = await ethers.deployContract("PancakeRouter", [
-        a.PancakeFactory,
+    const pancakeFactory = await ethers.deployContract("RedswapRouter", [
+        a.RedswapFactory,
         a.WETH,
     ])
 

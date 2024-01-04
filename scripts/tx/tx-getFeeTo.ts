@@ -9,8 +9,8 @@ async function main() {
         a.RedswapFactory
     )
 
-    const tx = await factory.createPair(a.WETH, a.ORB)
-    console.log(tx)
+    const tx = await factory.feeTo()
+    console.log("feeTo by factory:", tx)
 }
 
 main().catch((error) => {

@@ -4,11 +4,11 @@ import { getAddresses } from "../addresses"
 async function main() {
     const a = getAddresses()!
 
-    const router = await ethers.getContractAt("PancakeRouter", a.PancakeRouter)
+    const router = await ethers.getContractAt("RedswapRouter", a.RedswapRouter)
 
     const tx = await router.addLiquidity(
         a.WETH,
-        a.MockERC20,
+        a.ORB,
         ethers.parseEther("0.05"),
         ethers.parseEther("0.05"),
         ethers.parseEther("0.01"),
