@@ -39,7 +39,7 @@ async function main() {
     console.log("allPairs by factory:", tx)
 
     const initCodeHash =
-        "0x3b8df7d60bfd1587124e5b93a5bc0ea844b3ba4c938828c1bdd3ce412cce1c6e"
+        "0xe7aa196a09c70b7cba8fd9da74adbecb28e53429b2f41d65b1d460c3abe11654"
 
     const pairAddress = getPairAddress(
         a.RedswapFactory,
