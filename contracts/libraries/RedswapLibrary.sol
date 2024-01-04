@@ -34,7 +34,7 @@ library RedswapLibrary {
                         hex"ff",
                         factory,
                         keccak256(abi.encodePacked(token0, token1)),
-                        hex"68b99b402ebe213798c86d04c78d2f0d8e499fc9cdb039ac83c20aa954a09407" // init code hash
+                        hex"3b8df7d60bfd1587124e5b93a5bc0ea844b3ba4c938828c1bdd3ce412cce1c6e" // init code hash
                     )
                 )
             )
