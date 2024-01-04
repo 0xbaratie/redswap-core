@@ -4,12 +4,8 @@ import { getAddresses } from "../addresses"
 async function main() {
     const a = getAddresses()!
 
-    const factory = await ethers.getContractAt(
-        "RedswapFactory",
-        a.RedswapFactory
-    )
-
-    const tx = await factory.createPair(a.WETH, a.ORB)
+    const weth = await ethers.getContractAt("WETH9", a.WETH)
+    const tx = await weth.deposit({ value: ethers.parseEther("0.5") })
     console.log(tx)
 }
 

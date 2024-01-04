@@ -8,7 +8,7 @@ async function main() {
 
     const tx = await router.addLiquidity(
         a.WETH,
-        a.MockERC20,
+        a.ORB,
         ethers.parseEther("0.05"),
         ethers.parseEther("0.05"),
         ethers.parseEther("0.01"),
