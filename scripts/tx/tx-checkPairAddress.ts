@@ -31,8 +31,8 @@ async function main() {
     const a = getAddresses()!
 
     const factory = await ethers.getContractAt(
-        "PancakeFactory",
-        a.PancakeFactory
+        "RedswapFactory",
+        a.RedswapFactory
     )
 
     const tx = await factory.allPairs(0)
@@ -42,7 +42,7 @@ async function main() {
         "0x68b99b402ebe213798c86d04c78d2f0d8e499fc9cdb039ac83c20aa954a09407"
 
     const pairAddress = getPairAddress(
-        a.PancakeFactory,
+        a.RedswapFactory,
         a.MockERC20,
         a.WETH,
         initCodeHash

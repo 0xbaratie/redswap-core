@@ -6,7 +6,7 @@ async function main() {
 
     const weth = await ethers.getContractAt("WETH9", a.WETH)
 
-    const tx = await weth.approve(a.PancakeRouter, ethers.MaxUint256)
+    const tx = await weth.approve(a.RedswapRouter, ethers.MaxUint256)
     console.log(tx)
 }
 

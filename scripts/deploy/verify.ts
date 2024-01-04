@@ -9,20 +9,15 @@ async function main() {
         address: a.WETH,
     })
 
-    // mock
-    await env.run("verify:verify", {
-        address: a.MockERC20,
-    })
-
     // factory
     await env.run("verify:verify", {
-        address: a.PancakeFactory,
+        address: a.RedswapFactory,
         constructorArguments: [a.Deployer],
     })
 
     // router
     await env.run("verify:verify", {
-        address: a.PancakeRouter,
+        address: a.RedswapRouter,
     })
 }
 

@@ -2,13 +2,13 @@ import { ethers } from "hardhat"
 
 const main = async () => {
     const [deployer] = await ethers.getSigners()
-    console.log("Deployer:", deployer.address)
+    // console.log("Deployer:", deployer.address)
 
-    const pancakeFactory = await ethers.deployContract("PancakeFactory", [
+    const pancakeFactory = await ethers.deployContract("RedswapFactory", [
         deployer.address,
     ])
 
-    console.log("Token address:", await pancakeFactory.getAddress())
+    console.log("Deployed address:", await pancakeFactory.getAddress())
 }
 
 main()

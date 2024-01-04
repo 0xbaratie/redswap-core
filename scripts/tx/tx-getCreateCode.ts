@@ -1,8 +1,8 @@
 import { ethers } from "hardhat"
 
 async function main() {
-    const PancakePairFactory = await ethers.getContractFactory("PancakePair")
-    const creationCode = PancakePairFactory.bytecode
+    const RedswapPairFactory = await ethers.getContractFactory("RedswapPair")
+    const creationCode = RedswapPairFactory.bytecode
     // console.log("creationCode:", creationCode)
 
     const bytecodeHash = ethers.keccak256(creationCode)

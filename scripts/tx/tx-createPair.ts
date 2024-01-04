@@ -5,8 +5,8 @@ async function main() {
     const a = getAddresses()!
 
     const factory = await ethers.getContractAt(
-        "PancakeFactory",
-        a.PancakeFactory
+        "RedswapFactory",
+        a.RedswapFactory
     )
 
     const tx = await factory.createPair(a.WETH, a.MockERC20)
