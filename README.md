@@ -4,6 +4,8 @@ This repo contains all the contracts used in RedSwap on RedStone network. It is 
 
 RedSwap is based on uniswap-v2-periphery without fee structure with foundry tests.
 
+Contract(Redstone Testnet): [0x9d8148d2382eaF2c2E917a34341e7A38Aa7Cb120](https://explorer.holesky.redstone.xyz/address/0x9d8148d2382eaF2c2E917a34341e7A38Aa7Cb120)
+
 ## Tree
 
 ```
