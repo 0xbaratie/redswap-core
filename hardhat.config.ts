@@ -11,6 +11,7 @@ const config: HardhatUserConfig = {
                     ? [process.env.PRIVATE_KEY]
                     : [],
         },
+        hardhat: {},
     },
     solidity: {
         compilers: [
